@@ -1,0 +1,141 @@
+\documentclass{mjandrews.notes.nomp}
+\usepackage{booktabs}
+\usepackage{a4wide}
+\usepackage{mathpazo, eulervm}
+\usepackage{lipsum}
+\title{Bayesian Data Analysis Workshops}
+\author{Mark Andrews \\ Department of Psychology \\ Nottingham-Trent University}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+The aim of this pair of workshops is to give a theoretical and practical
+introduction to Bayesian data analysis. The first workshop will primarily deal
+with the theoretical introduction, with the second workshop primarily dealing
+with how to do Bayesian data analysis in practice, using real world data sets
+and a wide range of computational tools available in the R programming
+language.  Throughout both days, our focus will be largely on a set of widely
+used and practically useful statistical models, particularly the general linear
+models, generalized linear models, and their multilevel counterparts. 
+
+In what follows, we provide a schedule for each workshop and brief overview of
+topics covered in each one.
+
+\section{Workshop 1}
+
+\begin{center}
+	\begin{tabular}{rp{0.7\textwidth}}
+		9:30am & Historical \& general overview \\
+		11:30am & Bayes's theorem and statistical inference\\
+		12:30pm & \emph{Break} \\
+		1:30pm & Analytically tractable Bayesian models \\
+		3:30pm & Bayesian inference using Markov Chain Monte Carlo \\
+		5:30pm & Close  \\
+\end{tabular}
+\end{center}
+
+
+\subsection*{Historical, philosophical, \& general overview}
+
+Bayesian data analysis is a general approach to statistical data analysis and
+is often contrasted with the more familiar \emph{classical} or
+\emph{frequentist} approach to data analysis.   The aim of this section to
+provide a general overview of what Bayesian methods are, how they differ from
+the more familiar classical methods, and how and why they have risen in
+prominence in recent decades.
+
+\subsection*{Bayes's theorem and statistical inference}
+
+In this section, we will describe a simple example of Bayesian inference and
+show how this can be extended to provide a general means for inference in
+statistical models. The aim here is to understand the fundamentals of Bayesian
+statistical modelling using some simple and intuitive examples.
+
+\subsection*{Analytically tractable Bayesian models}
+
+In some probabilistic models, such as linear models with Normally distributed
+errors, Bayesian inference is analytical tractable: There are closed form
+solutions for inference of parameters, predictions of unobserved data, and
+model comparison.  In this section, we concentrate on some example of these
+models, and derive the solutions for inference and predictions. In this
+section, we will also focus on the general topic of conjugate priors, and how
+to do Bayesian hypothesis testing and model comparison using Bayes factors.
+
+\subsection*{Bayesian models using Markov Chain Monte Carlo}
+
+In general, inference and prediction in Bayesian models is not analytically
+tractable. In these situations, we use Monte Carlo methods, particularly Markov
+Chain Monte Carlo (MCMC) methods, to make inferences and predictions on the
+basis of samples. In this section, we will consider why it is necessary to use
+Monte Carlo methods and MCMC methods, and we will describe the methods such as
+rejection sampling, importance sampling, Gibbs sampling, Metropolis-Hastings
+sampling. We will also provide an overview of probabilistic modelling languages
+that allow us to easily set up and use MCMC sampling methods.
+
+\section{Workshop 2}
+
+\begin{center}
+	\begin{tabular}{rp{0.7\textwidth}}
+		9:30am & Bayesian data analysis using R\\
+		10:30am & Bayesian linear models \\
+		12:30pm & \emph{Break} \\
+		1:30pm & Bayesian generalized linear models \\
+		3:30pm & Bayesian multilevel models \\
+		5:30pm & Close  \\
+\end{tabular}
+\end{center}
+
+\subsection{Bayesian data analysis with R}
+
+We will begin with an overview of how to R and RStudio for Bayesian data
+analysis. We will focus on the main and popular Bayesian R packages, and show
+how R can be used with probabilistic modelling languages such JAGS.
+
+\subsection{Bayesian linear models}
+
+In this section, we will focus on inference, prediction, and model comparison
+in linear regression and general linear models. Using this set of examples, we
+will be able to easily see the main differences, as well as the similarities,
+between Bayesian and classical approaches to data analysis.
+
+\subsection{Bayesian generalized linear models}
+
+Generalized linear models -- logistic regression, Poisson regression, ordinal
+logistic regression, etc. -- require MCMC methods for inference and prediction.
+In this section, we will primarily focus on how to use JAGS as a flexible and
+powerful approach to Bayesian modelling with MCMC.
+
+\subsection{Bayesian multilevel models}
+
+In this section, we will consider the multilevel extensions of linear and
+generalized linear models. In this section, we will again use JAGS, as well as
+some specially made packages for Bayesian multilevel modelling.
+
+
+\section*{About the presenter}
+
+Dr.\ Mark Andrews is a senior lecturer in experimental psychology in the
+Department of Psychology, Nottingham Trent University. His research focuses on
+the application of Bayesian methods to the study of human cognition. For the
+past few years, he has been funded by the ESRC to provide workshops on Bayesian
+Data analysis to researchers in the social sciences, see
+\[
+\texttt{http://www.priorexposure.org.uk}
+\]
+
+
+
+\section*{Preparing for the workshop}
+
+You should bring your own laptop computer with R, and R studio, JAGS and rjags
+pre-installed. Instructions for setting up your laptop can be found here:
+\[
+\texttt{http://www.priorexposure.org.uk/software}
+\]
+
+
+\end{document}
